@@ -383,6 +383,7 @@ void window_keypress_handler(GtkWidget *widget, GdkEventKey *event,
       case GDK_KEY_Escape:
       case GDK_KEY_q:
         maybe_save_output_file(state);
+        state->exit_code = 1;
         gtk_main_quit();
         break;
       case GDK_KEY_b:

@@ -189,4 +189,5 @@ struct swappy_state {
 
   int argc;
   char **argv;
+  int exit_code;
 };
